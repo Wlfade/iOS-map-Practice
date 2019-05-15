@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40BECE06227C29A7006E7C5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BECE05227C29A7006E7C5F /* AppDelegate.m */; };
+		40BECE09227C29A7006E7C5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BECE08227C29A7006E7C5F /* ViewController.m */; };
+		40BECE0C227C29A7006E7C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BECE0A227C29A7006E7C5F /* Main.storyboard */; };
+		40BECE0E227C29A8006E7C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40BECE0D227C29A8006E7C5F /* Assets.xcassets */; };
+		40BECE11227C29A8006E7C5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BECE0F227C29A8006E7C5F /* LaunchScreen.storyboard */; };
+		40BECE14227C29A8006E7C5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BECE13227C29A8006E7C5F /* main.m */; };
+		40BECE1E227C29A8006E7C5F /* _2____Mapkit_________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BECE1D227C29A8006E7C5F /* _2____Mapkit_________Tests.m */; };
+		40BECE29227C29A8006E7C5F /* _2____Mapkit_________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BECE28227C29A8006E7C5F /* _2____Mapkit_________UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40BECE1A227C29A8006E7C5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40BECDF9227C29A7006E7C5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40BECE00227C29A7006E7C5F;
+			remoteInfo = "02-掌握-Mapkit框架-绘制导航路线";
+		};
+		40BECE25227C29A8006E7C5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40BECDF9227C29A7006E7C5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40BECE00227C29A7006E7C5F;
+			remoteInfo = "02-掌握-Mapkit框架-绘制导航路线";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40BECE01227C29A7006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-掌握-Mapkit框架-绘制导航路线.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BECE04227C29A7006E7C5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		40BECE05227C29A7006E7C5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		40BECE07227C29A7006E7C5F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		40BECE08227C29A7006E7C5F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		40BECE0B227C29A7006E7C5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40BECE0D227C29A8006E7C5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40BECE10227C29A8006E7C5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40BECE12227C29A8006E7C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40BECE13227C29A8006E7C5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40BECE19227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "02-掌握-Mapkit框架-绘制导航路线Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BECE1D227C29A8006E7C5F /* _2____Mapkit_________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_2____Mapkit_________Tests.m"; sourceTree = "<group>"; };
+		40BECE1F227C29A8006E7C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40BECE24227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "02-掌握-Mapkit框架-绘制导航路线UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BECE28227C29A8006E7C5F /* _2____Mapkit_________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_2____Mapkit_________UITests.m"; sourceTree = "<group>"; };
+		40BECE2A227C29A8006E7C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40BECDFE227C29A7006E7C5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BECE16227C29A8006E7C5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BECE21227C29A8006E7C5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40BECDF8227C29A7006E7C5F = {
+			isa = PBXGroup;
+			children = (
+				40BECE03227C29A7006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线 */,
+				40BECE1C227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线Tests */,
+				40BECE27227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线UITests */,
+				40BECE02227C29A7006E7C5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40BECE02227C29A7006E7C5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40BECE01227C29A7006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线.app */,
+				40BECE19227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线Tests.xctest */,
+				40BECE24227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40BECE03227C29A7006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线 */ = {
+			isa = PBXGroup;
+			children = (
+				40BECE04227C29A7006E7C5F /* AppDelegate.h */,
+				40BECE05227C29A7006E7C5F /* AppDelegate.m */,
+				40BECE07227C29A7006E7C5F /* ViewController.h */,
+				40BECE08227C29A7006E7C5F /* ViewController.m */,
+				40BECE0A227C29A7006E7C5F /* Main.storyboard */,
+				40BECE0D227C29A8006E7C5F /* Assets.xcassets */,
+				40BECE0F227C29A8006E7C5F /* LaunchScreen.storyboard */,
+				40BECE12227C29A8006E7C5F /* Info.plist */,
+				40BECE13227C29A8006E7C5F /* main.m */,
+			);
+			path = "02-掌握-Mapkit框架-绘制导航路线";
+			sourceTree = "<group>";
+		};
+		40BECE1C227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线Tests */ = {
+			isa = PBXGroup;
+			children = (
+				40BECE1D227C29A8006E7C5F /* _2____Mapkit_________Tests.m */,
+				40BECE1F227C29A8006E7C5F /* Info.plist */,
+			);
+			path = "02-掌握-Mapkit框架-绘制导航路线Tests";
+			sourceTree = "<group>";
+		};
+		40BECE27227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线UITests */ = {
+			isa = PBXGroup;
+			children = (
+				40BECE28227C29A8006E7C5F /* _2____Mapkit_________UITests.m */,
+				40BECE2A227C29A8006E7C5F /* Info.plist */,
+			);
+			path = "02-掌握-Mapkit框架-绘制导航路线UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40BECE00227C29A7006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40BECE2D227C29A8006E7C5F /* Build configuration list for PBXNativeTarget "02-掌握-Mapkit框架-绘制导航路线" */;
+			buildPhases = (
+				40BECDFD227C29A7006E7C5F /* Sources */,
+				40BECDFE227C29A7006E7C5F /* Frameworks */,
+				40BECDFF227C29A7006E7C5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02-掌握-Mapkit框架-绘制导航路线";
+			productName = "02-掌握-Mapkit框架-绘制导航路线";
+			productReference = 40BECE01227C29A7006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40BECE18227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40BECE30227C29A8006E7C5F /* Build configuration list for PBXNativeTarget "02-掌握-Mapkit框架-绘制导航路线Tests" */;
+			buildPhases = (
+				40BECE15227C29A8006E7C5F /* Sources */,
+				40BECE16227C29A8006E7C5F /* Frameworks */,
+				40BECE17227C29A8006E7C5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40BECE1B227C29A8006E7C5F /* PBXTargetDependency */,
+			);
+			name = "02-掌握-Mapkit框架-绘制导航路线Tests";
+			productName = "02-掌握-Mapkit框架-绘制导航路线Tests";
+			productReference = 40BECE19227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		40BECE23227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40BECE33227C29A8006E7C5F /* Build configuration list for PBXNativeTarget "02-掌握-Mapkit框架-绘制导航路线UITests" */;
+			buildPhases = (
+				40BECE20227C29A8006E7C5F /* Sources */,
+				40BECE21227C29A8006E7C5F /* Frameworks */,
+				40BECE22227C29A8006E7C5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40BECE26227C29A8006E7C5F /* PBXTargetDependency */,
+			);
+			name = "02-掌握-Mapkit框架-绘制导航路线UITests";
+			productName = "02-掌握-Mapkit框架-绘制导航路线UITests";
+			productReference = 40BECE24227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40BECDF9227C29A7006E7C5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "王玲峰";
+				TargetAttributes = {
+					40BECE00227C29A7006E7C5F = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					40BECE18227C29A8006E7C5F = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 40BECE00227C29A7006E7C5F;
+					};
+					40BECE23227C29A8006E7C5F = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 40BECE00227C29A7006E7C5F;
+					};
+				};
+			};
+			buildConfigurationList = 40BECDFC227C29A7006E7C5F /* Build configuration list for PBXProject "02-掌握-Mapkit框架-绘制导航路线" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40BECDF8227C29A7006E7C5F;
+			productRefGroup = 40BECE02227C29A7006E7C5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40BECE00227C29A7006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线 */,
+				40BECE18227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线Tests */,
+				40BECE23227C29A8006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40BECDFF227C29A7006E7C5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BECE11227C29A8006E7C5F /* LaunchScreen.storyboard in Resources */,
+				40BECE0E227C29A8006E7C5F /* Assets.xcassets in Resources */,
+				40BECE0C227C29A7006E7C5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BECE17227C29A8006E7C5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BECE22227C29A8006E7C5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40BECDFD227C29A7006E7C5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BECE09227C29A7006E7C5F /* ViewController.m in Sources */,
+				40BECE14227C29A8006E7C5F /* main.m in Sources */,
+				40BECE06227C29A7006E7C5F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BECE15227C29A8006E7C5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BECE1E227C29A8006E7C5F /* _2____Mapkit_________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BECE20227C29A8006E7C5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BECE29227C29A8006E7C5F /* _2____Mapkit_________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40BECE1B227C29A8006E7C5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40BECE00227C29A7006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线 */;
+			targetProxy = 40BECE1A227C29A8006E7C5F /* PBXContainerItemProxy */;
+		};
+		40BECE26227C29A8006E7C5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40BECE00227C29A7006E7C5F /* 02-掌握-Mapkit框架-绘制导航路线 */;
+			targetProxy = 40BECE25227C29A8006E7C5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40BECE0A227C29A7006E7C5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40BECE0B227C29A7006E7C5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40BECE0F227C29A8006E7C5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40BECE10227C29A8006E7C5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40BECE2B227C29A8006E7C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40BECE2C227C29A8006E7C5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40BECE2E227C29A8006E7C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "02-掌握-Mapkit框架-绘制导航路线/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wlfggg.-2----Mapkit---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40BECE2F227C29A8006E7C5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "02-掌握-Mapkit框架-绘制导航路线/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wlfggg.-2----Mapkit---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40BECE31227C29A8006E7C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "02-掌握-Mapkit框架-绘制导航路线Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wlfggg.-2----Mapkit---------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/02-掌握-Mapkit框架-绘制导航路线.app/02-掌握-Mapkit框架-绘制导航路线";
+			};
+			name = Debug;
+		};
+		40BECE32227C29A8006E7C5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "02-掌握-Mapkit框架-绘制导航路线Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wlfggg.-2----Mapkit---------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/02-掌握-Mapkit框架-绘制导航路线.app/02-掌握-Mapkit框架-绘制导航路线";
+			};
+			name = Release;
+		};
+		40BECE34227C29A8006E7C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "02-掌握-Mapkit框架-绘制导航路线UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wlfggg.-2----Mapkit---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "02-掌握-Mapkit框架-绘制导航路线";
+			};
+			name = Debug;
+		};
+		40BECE35227C29A8006E7C5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "02-掌握-Mapkit框架-绘制导航路线UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wlfggg.-2----Mapkit---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "02-掌握-Mapkit框架-绘制导航路线";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40BECDFC227C29A7006E7C5F /* Build configuration list for PBXProject "02-掌握-Mapkit框架-绘制导航路线" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BECE2B227C29A8006E7C5F /* Debug */,
+				40BECE2C227C29A8006E7C5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40BECE2D227C29A8006E7C5F /* Build configuration list for PBXNativeTarget "02-掌握-Mapkit框架-绘制导航路线" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BECE2E227C29A8006E7C5F /* Debug */,
+				40BECE2F227C29A8006E7C5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40BECE30227C29A8006E7C5F /* Build configuration list for PBXNativeTarget "02-掌握-Mapkit框架-绘制导航路线Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BECE31227C29A8006E7C5F /* Debug */,
+				40BECE32227C29A8006E7C5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40BECE33227C29A8006E7C5F /* Build configuration list for PBXNativeTarget "02-掌握-Mapkit框架-绘制导航路线UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BECE34227C29A8006E7C5F /* Debug */,
+				40BECE35227C29A8006E7C5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40BECDF9227C29A7006E7C5F /* Project object */;
+}

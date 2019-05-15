@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EW9-PG-F0I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2MJ-e5-f12">
+                                <rect key="frame" x="66.5" y="84" width="242" height="283.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="详细地址" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sv6-Pe-en7">
+                                        <rect key="frame" x="0.0" y="0.0" width="242" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JEX-Ad-wf5">
+                                        <rect key="frame" x="0.0" y="40.5" width="242" height="93"/>
+                                        <color key="backgroundColor" red="0.45543722639177131" green="1" blue="0.27651686193812486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="纬度" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJr-d8-pZr">
+                                        <rect key="frame" x="0.0" y="153.5" width="242" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="经度" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-pq-iTi">
+                                        <rect key="frame" x="0.0" y="203.5" width="242" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TAg-wi-tSc">
+                                        <rect key="frame" x="0.0" y="253.5" width="242" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xta-IP-eDx">
+                                                <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.15387348333098783" blue="0.98445847087644789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="地理编码"/>
+                                                <connections>
+                                                    <action selector="geoCode" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gHy-7o-CY8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="use-ws-4yk">
+                                                <rect key="frame" x="121" y="0.0" width="121" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.35671527987331852" blue="0.2718071015658029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="反地理编码"/>
+                                                <connections>
+                                                    <action selector="reverseGeoCode" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MJp-Lq-GI3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="MD1-4q-pA2"/>
+                                    <constraint firstAttribute="height" constant="283.5" id="iCp-5V-dmU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2MJ-e5-f12" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4ea-63-2oK"/>
+                            <constraint firstItem="2MJ-e5-f12" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PnC-nX-H7O"/>
+                            <constraint firstItem="2MJ-e5-f12" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="hI1-yI-oYY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTV" destination="JEX-Ad-wf5" id="bOu-gI-5WS"/>
+                        <outlet property="laTF" destination="pJr-d8-pZr" id="A74-Ra-EYm"/>
+                        <outlet property="longTF" destination="t1Q-pq-iTi" id="Pqy-84-Tte"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="287"/>
+        </scene>
+        <!--Third Frame View Controller-->
+        <scene sceneID="4j7-Xz-m5x">
+            <objects>
+                <viewController id="EW9-PG-F0I" customClass="ThirdFrameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QN0-mG-8Qh"/>
+                        <viewControllerLayoutGuide type="bottom" id="LJf-k2-koi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qnT-QD-e13">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ep0-bv-hqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="-175"/>
+        </scene>
+    </scenes>
+</document>
