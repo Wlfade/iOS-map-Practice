@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>iOS8.0之前的定位</title>
+	</head>
+<body>
+<h2>iOS8.0之前的定位</h2>
+
+<h3>前台定位</h3>
+
+<ol>
+	<li><p>导入CoreLocation框架和对应的主头文件</p>
+
+		<pre><code>#import &lt;CoreLocation/CoreLocation.h&gt; 
+		</code></pre></li>
+	<li><p>创建CLLcationManager对象,并设置代理</p>
+
+		<pre><code>_locationM = [[CLLocationManager alloc] init];
+		_locationM.delegate = self;
+		</code></pre></li>
+	<li><p>调用CLLcationManager对象的startUpdatingLocation方法进行更新用户位置</p>
+
+		<pre><code>[_locationM startUpdatingLocation];
+		</code></pre></li>
+	<li><p>实现代理方法,接收位置参数 </p>
+
+		<pre><code>-(void)locationManager:(nonnull CLLocationManager *)manager didUpdateLocations:(nonnull NSArray&lt;CLLocation *&gt; *)locations
+		</code></pre></li>
+</ol>
+
+<h3>后台定位</h3>
+
+<ol>
+	<li><p>在前台定位基础上,勾选后台模式update locations(如下图)</p>
+
+		<figure><img src="DraggedImage.png" title="添加后台运行模式"/></figure></li>
+</ol>
+
+<h2>iOS8.0+ 至 iOS9.0之前的定位</h2>
+
+<h3>前台定位</h3>
+
+<ol>
+	<li><p>导入CoreLocation框架和对应的主头文件</p>
+
+		<pre><code>#import &lt;CoreLocation/CoreLocation.h&gt;
+		</code></pre></li>
+	<li><p>创建CLLcationManager对象,并设置代理 <em> 请求前台定位授权,并配置KEY </em></p>
+
+		<pre><code>_locationM = [[CLLocationManager alloc] init];
+		_locationM.delegate = self;
+		if ([[UIDevice currentDevice].systemVersion floatValue] &gt;= 8.0) 
+		{
+		[_locationM requestWhenInUseAuthorization];
+		}
+		</code></pre>
+
+		<figure><img src="DraggedImage-1.png"/></figure></li>
+	<li><p>调用CLLcationManager对象的startUpdatingLocation方法进行更新用户位置</p>
+
+		<pre><code>[_locationM startUpdatingLocation];
+		</code></pre></li>
+	<li><p>实现代理方法,接收位置参数 </p>
+
+		<pre><code>-(void)locationManager:(nonnull CLLocationManager *)manager didUpdateLocations:(nonnull NSArray&lt;CLLocation *&gt; *)locations
+		</code></pre></li>
+</ol>
+
+<h3>后台定位</h3>
+
+<ul>
+	<li><p>方案一:在APP处于前台定位授权场景下,勾选后台运行模式update locations (如下图)</p>
+
+		<figure><img src="DraggedImage-2.png" title="添加后台运行模式"/></figure></li>
+	<li><p>方案二:请求前后台定位授权,并配置KEY</p>
+
+		<pre><code>[_locationM requestAlwaysAuthorization];
+		</code></pre>
+
+		<figure><img src="DraggedImage-3.png"/></figure></li>
+</ul>
+
+<h3>各种授权状态讲解</h3>
+
+<pre><code>switch (status) {
+            // 用户还未决定
+        case kCLAuthorizationStatusNotDetermined:
+        {
+            NSLog(@&quot;用户还未决定&quot;);
+            break;
+        }
+            // 问受限
+        case kCLAuthorizationStatusRestricted:
+        {
+            NSLog(@&quot;访问受限&quot;);
+            break;
+        }
+            // 定位关闭时和对此APP授权为never时调用
+        case kCLAuthorizationStatusDenied:
+        {
+            // 定位是否可用（是否支持定位或者定位是否开启）
+            if([CLLocationManager locationServicesEnabled])
+            {
+                NSLog(@&quot;定位开启，但被拒&quot;);
+            }else
+            {
+                NSLog(@&quot;定位关闭，不可用&quot;);
+            }
+            break;
+        }
+            // 获取前后台定位授权
+        case kCLAuthorizationStatusAuthorizedAlways:
+//        case kCLAuthorizationStatusAuthorized: // 失效，不建议使用
+        {
+            NSLog(@&quot;获取前后台定位授权&quot;);
+            break;
+        }
+            // 获得前台定位授权
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+        {
+            NSLog(@&quot;获得前台定位授权&quot;);
+            break;
+        }
+        default:
+            break;
+    }
+</code></pre>
+
+<h2>iOS9.0 定位补充</h2>
+
+<h3>前台定位</h3>
+
+<ol>
+	<li><p>导入CoreLocation框架和对应的主头文件</p>
+
+		<pre><code>#import &lt;CoreLocation/CoreLocation.h&gt;
+		</code></pre></li>
+	<li><p>创建CLLcationManager对象,并设置代理 <em> 请求前台定位授权,并配置KEY </em></p>
+
+		<pre><code>_locationM = [[CLLocationManager alloc] init];
+		_locationM.delegate = self;
+		if ([[UIDevice currentDevice].systemVersion floatValue] &gt;= 8.0) 
+		{
+		[_locationM requestWhenInUseAuthorization];
+		}
+		</code></pre>
+
+		<figure><img src="DraggedImage-4.png"/></figure></li>
+	<li><p>调用CLLcationManager对象的startUpdatingLocation方法进行更新用户位置</p>
+
+		<pre><code>[_locationM startUpdatingLocation];
+		</code></pre></li>
+	<li><p>实现代理方法,接收位置参数 </p>
+
+		<pre><code>-(void)locationManager:(nonnull CLLocationManager *)manager didUpdateLocations:(nonnull NSArray&lt;CLLocation *&gt; *)locations
+		</code></pre></li>
+</ol>
+
+<h3>后台定位</h3>
+
+<ul>
+	<li><p>方案一:在APP处于前台定位授权场景下,勾选后台运行模式update locations (如下图) 并且,调用以下方法,设置允许后台定位</p>
+
+		<pre><code>if ([[UIDevice currentDevice].systemVersion floatValue] &gt;= 9.0) {
+		_locationM.allowsBackgroundLocationUpdates = YES;
+		}
+		</code></pre>
+
+		<figure><img src="DraggedImage-5.png" title="添加后台运行模式"/></figure></li>
+	<li><p>方案二:请求前后台定位授权,并配置KEY</p>
+
+		<pre><code>[_locationM requestAlwaysAuthorization];
+		</code></pre>
+
+		<figure><img src="DraggedImage-6.png"/></figure></li>
+</ul>
+
+<h3>补充</h3>
+
+<pre><code>// 作用：按照定位精确度从低到高进行排序，逐个进行定位。如果获取到的位置不是精确度最高的那个，也会在定位超时后，通过代理告诉外界
+// 注意：一个要实现代理的定位失败方法； 二：不能与startUpdatingLocation同时使用
+[_locationM requestLocation];
+</code></pre>
+
+<h2>CLLocation对象详解</h2>
+
+<pre><code>  //coordinate	（当前位置所在的经纬度）
+  //altitude	（海拔）
+  //speed	（当前速度）
+  //-distanceFromLocation: （获取两个位置之间的直线物理距离）
+</code></pre>
+
+<h2>指南针</h2>
+
+<ol>
+	<li><p>导入CoreLocation框架和对应的主头文件</p>
+
+		<pre><code>#import &lt;CoreLocation/CoreLocation.h&gt; 
+		</code></pre></li>
+	<li><p>创建CLLcationManager对象,并设置代理</p>
+
+		<pre><code>_locationM = [[CLLocationManager alloc] init];
+		_locationM.delegate = self;
+		</code></pre></li>
+	<li><p>调用CLLcationManager对象的startUpdatingHeading方法进行更新设备朝向</p>
+
+		<pre><code>[_locationM startUpdatingHeading];
+		</code></pre></li>
+	<li><p>实现代理方法,获取方向参数,根据方向参数旋转图片 </p>
+
+		<pre><code>-(void)locationManager:(nonnull CLLocationManager *)manager didUpdateHeading:(nonnull CLHeading *)newHeading
+		{
+		    // 获取当前设备朝向(磁北方向)
+		    CGFloat angle = newHeading.magneticHeading;
+
+		    // 转换成为弧度
+		    CGFloat radian = angle / 180.0 * M_PI;
+
+		    // 反向旋转指南针
+		    [UIView animateWithDuration:0.5 animations:^{
+		        self.compassView.transform = CGAffineTransformMakeRotation(-radian);
+		    }];
+		}
+		</code></pre></li>
+</ol>
+
+<ul>
+	<li>注意: 获取用户的设备朝向,不需要用户进行定位授权 <em>
+		</em></li>
+</ul>
+
+<h2>区域监听</h2>
+
+<ol>
+	<li><p>导入CoreLocation框架和对应的主头文件</p>
+
+		<pre><code>#import &lt;CoreLocation/CoreLocation.h&gt;
+		</code></pre></li>
+	<li><p>创建CLLcationManager对象,并设置代理,请求授权(iOS8.0之后才需要) <em> 请求前后台定位授权,并配置KEY </em></p>
+
+		<pre><code>_locationM = [[CLLocationManager alloc] init];
+		_locationM.delegate = self;
+		if ([[UIDevice currentDevice].systemVersion floatValue] &gt;= 8.0) 
+		{
+		[_locationM requestAlwaysAuthorization];
+		}
+		</code></pre>
+
+		<figure><img src="DraggedImage-7.png"/></figure></li>
+	<li><p>调用CLLcationManager对象的startMonitoringForRegion:方法进行监听指定区域</p>
+
+		<pre><code>	// 创建区域中心
+		    CLLocationCoordinate2D center = CLLocationCoordinate2DMake(29.12345, 131.23456);
+		    // 创建区域（指定区域中心，和区域半径）
+		    CLCircularRegion *region = [[CLCircularRegion alloc] initWithCenter:center radius:1000 identifier:@&quot;小码哥&quot;];
+		    // 开始监听指定区域
+		    [self.locationM startMonitoringForRegion:region];
+		</code></pre></li>
+	<li><p>实现代理方法,获取区域进入或者离开状态 </p>
+
+		<pre><code>// 进去监听区域后调用（调用一次）
+		-(void)locationManager:(nonnull CLLocationManager *)manager didEnterRegion:(nonnull CLRegion *)region
+		{
+		    NSLog(@&quot;进入区域---%@&quot;, region.identifier);
+		    [manager stopMonitoringForRegion:region];
+		}
+
+		// 离开监听区域后调用（调用一次）
+		-(void)locationManager:(nonnull CLLocationManager *)manager didExitRegion:(nonnull CLRegion *)region
+		{
+		    NSLog(@&quot;离开区域---%@&quot;, region.identifier);
+		}
+		</code></pre></li>
+</ol>
+
+<h2>(反)地理编码</h2>
+
+<ol>
+	<li><p>导入CoreLocation框架和对应的主头文件</p>
+
+		<pre><code>#import &lt;CoreLocation/CoreLocation.h&gt;
+		</code></pre></li>
+	<li><p>创建CLGeocoder对象</p>
+
+		<pre><code>_geoC = [[CLGeocoder alloc] init];
+		</code></pre></li>
+	<li>地理编码</li>
+</ol>
+
+<ul>
+	<li><p>方案1:</p>
+
+		<pre><code>// 地理编码方案一：直接根据地址进行地理编码（返回结果可能有多个，因为一个地点有重名）
+		    [self.geoC geocodeAddressString:@&quot;盛达商务园&quot; completionHandler:^(NSArray&lt;CLPlacemark *&gt; * __nullable placemarks, NSError * __nullable error) {
+		        // 包含区，街道等信息的地标对象
+		        CLPlacemark *placemark = [placemarks firstObject];
+		        // 城市名称
+		//        NSString *city = placemark.locality;
+		        // 街道名称
+		//        NSString *street = placemark.thoroughfare;
+		        // 全称
+		        NSString *name = placemark.name;
+		        self.addressDetailTV.text = [NSString stringWithFormat:@&quot;%@&quot;, name];
+		        self.latitudeTF.text = [NSString stringWithFormat:@&quot;%f&quot;, placemark.location.coordinate.latitude];
+		        self.longtitudeTF.text = [NSString stringWithFormat:@&quot;%f&quot;, placemark.location.coordinate.longitude];
+		    }];
+		</code></pre></li>
+	<li><p>方案2:</p>
+
+		<pre><code>	// 地理编码方案二：根据地址和指定区域两个条件进行地理编码（更加精确）
+		    [self.geoC geocodeAddressString:@&quot;广州&quot; inRegion:nil completionHandler:^(NSArray&lt;CLPlacemark *&gt; * __nullable placemarks, NSError * __nullable error) {
+		        // 包含区，街道等信息的地标对象
+		        CLPlacemark *placemark = [placemarks firstObject];
+		        self.addressDetailTV.text = placemark.description;
+		        self.latitudeTF.text = [NSString stringWithFormat:@&quot;%f&quot;, placemark.location.coordinate.latitude];
+		        self.longtitudeTF.text = [NSString stringWithFormat:@&quot;%f&quot;, placemark.location.coordinate.longitude];
+		    }];
+		</code></pre></li>
+</ul>
+
+<ol>
+	<li><p>反地理编码</p>
+
+		<pre><code> // 创建CLLocation对象
+		    CLLocation *location = [[CLLocation alloc] initWithLatitude:23.132931 longitude:113.375924;
+		    // 根据CLLocation对象进行反地理编码
+		    [self.geoC reverseGeocodeLocation:location completionHandler:^(NSArray&lt;CLPlacemark *&gt; * __nullable placemarks, NSError * __nullable error) {
+		        // 包含区，街道等信息的地标对象
+		        CLPlacemark *placemark = [placemarks firstObject];
+		        // 城市名称
+		//        NSString *city = placemark.locality;
+		        // 街道名称
+		//        NSString *street = placemark.thoroughfare;
+		        // 全称
+		        NSString *name = placemark.name;
+		        self.addressDetailTV.text = [NSString stringWithFormat:@&quot;%@&quot;, name];
+		    }];
+		</code></pre></li>
+</ol>
+
+<h2>定位的第三方框架</h2>
+
+<ol>
+	<li><p>下载框架（locationManager框架）</p>
+
+		<p><a href="https://github.com/intuit/LocationManager"> locationManager框架 下载地址</a></p></li>
+	<li>导入框架(直接拖入项目)</li>
+	<li><p>框架功能说明</p>
+
+		<ul>
+			<li>可以使用block进行获取用户位置</li>
+			<li>可以设置超时时长</li>
+			<li>可以取消和强制终止定位</li>
+		</ul></li>
+	<li>按照github中,该框架的readme参照使用</li>
+</ol>
+
+</body>
+</html>
+

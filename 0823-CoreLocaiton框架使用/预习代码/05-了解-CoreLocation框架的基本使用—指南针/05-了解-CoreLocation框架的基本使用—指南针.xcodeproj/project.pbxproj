@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B9990021B72034B0025E635 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9990011B72034B0025E635 /* main.m */; };
+		7B9990051B72034B0025E635 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9990041B72034B0025E635 /* AppDelegate.m */; };
+		7B9990081B72034B0025E635 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9990071B72034B0025E635 /* ViewController.m */; };
+		7B99900B1B72034B0025E635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9990091B72034B0025E635 /* Main.storyboard */; };
+		7B99900D1B72034B0025E635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B99900C1B72034B0025E635 /* Assets.xcassets */; };
+		7B9990101B72034B0025E635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B99900E1B72034B0025E635 /* LaunchScreen.storyboard */; };
+		7B99901B1B72034B0025E635 /* _5____CoreLocation___________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B99901A1B72034B0025E635 /* _5____CoreLocation___________Tests.m */; };
+		7B9990261B72034B0025E635 /* _5____CoreLocation___________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9990251B72034B0025E635 /* _5____CoreLocation___________UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B9990171B72034B0025E635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B998FF51B72034A0025E635 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B998FFC1B72034A0025E635;
+			remoteInfo = "05-了解-CoreLocation框架的基本使用—指南针";
+		};
+		7B9990221B72034B0025E635 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B998FF51B72034A0025E635 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B998FFC1B72034A0025E635;
+			remoteInfo = "05-了解-CoreLocation框架的基本使用—指南针";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B998FFD1B72034A0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "05-了解-CoreLocation框架的基本使用—指南针.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9990011B72034B0025E635 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B9990031B72034B0025E635 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B9990041B72034B0025E635 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B9990061B72034B0025E635 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7B9990071B72034B0025E635 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7B99900A1B72034B0025E635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B99900C1B72034B0025E635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B99900F1B72034B0025E635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B9990111B72034B0025E635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9990161B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "05-了解-CoreLocation框架的基本使用—指南针Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B99901A1B72034B0025E635 /* _5____CoreLocation___________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_5____CoreLocation___________Tests.m"; sourceTree = "<group>"; };
+		7B99901C1B72034B0025E635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9990211B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "05-了解-CoreLocation框架的基本使用—指南针UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9990251B72034B0025E635 /* _5____CoreLocation___________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_5____CoreLocation___________UITests.m"; sourceTree = "<group>"; };
+		7B9990271B72034B0025E635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B998FFA1B72034A0025E635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9990131B72034B0025E635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B99901E1B72034B0025E635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B998FF41B72034A0025E635 = {
+			isa = PBXGroup;
+			children = (
+				7B998FFF1B72034A0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针 */,
+				7B9990191B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针Tests */,
+				7B9990241B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针UITests */,
+				7B998FFE1B72034A0025E635 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B998FFE1B72034A0025E635 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B998FFD1B72034A0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针.app */,
+				7B9990161B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针Tests.xctest */,
+				7B9990211B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B998FFF1B72034A0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针 */ = {
+			isa = PBXGroup;
+			children = (
+				7B9990031B72034B0025E635 /* AppDelegate.h */,
+				7B9990041B72034B0025E635 /* AppDelegate.m */,
+				7B9990061B72034B0025E635 /* ViewController.h */,
+				7B9990071B72034B0025E635 /* ViewController.m */,
+				7B9990091B72034B0025E635 /* Main.storyboard */,
+				7B99900C1B72034B0025E635 /* Assets.xcassets */,
+				7B99900E1B72034B0025E635 /* LaunchScreen.storyboard */,
+				7B9990111B72034B0025E635 /* Info.plist */,
+				7B9990001B72034A0025E635 /* Supporting Files */,
+			);
+			path = "05-了解-CoreLocation框架的基本使用—指南针";
+			sourceTree = "<group>";
+		};
+		7B9990001B72034A0025E635 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B9990011B72034B0025E635 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B9990191B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7B99901A1B72034B0025E635 /* _5____CoreLocation___________Tests.m */,
+				7B99901C1B72034B0025E635 /* Info.plist */,
+			);
+			path = "05-了解-CoreLocation框架的基本使用—指南针Tests";
+			sourceTree = "<group>";
+		};
+		7B9990241B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针UITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B9990251B72034B0025E635 /* _5____CoreLocation___________UITests.m */,
+				7B9990271B72034B0025E635 /* Info.plist */,
+			);
+			path = "05-了解-CoreLocation框架的基本使用—指南针UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B998FFC1B72034A0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B99902A1B72034B0025E635 /* Build configuration list for PBXNativeTarget "05-了解-CoreLocation框架的基本使用—指南针" */;
+			buildPhases = (
+				7B998FF91B72034A0025E635 /* Sources */,
+				7B998FFA1B72034A0025E635 /* Frameworks */,
+				7B998FFB1B72034A0025E635 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "05-了解-CoreLocation框架的基本使用—指南针";
+			productName = "05-了解-CoreLocation框架的基本使用—指南针";
+			productReference = 7B998FFD1B72034A0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B9990151B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B99902D1B72034B0025E635 /* Build configuration list for PBXNativeTarget "05-了解-CoreLocation框架的基本使用—指南针Tests" */;
+			buildPhases = (
+				7B9990121B72034B0025E635 /* Sources */,
+				7B9990131B72034B0025E635 /* Frameworks */,
+				7B9990141B72034B0025E635 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B9990181B72034B0025E635 /* PBXTargetDependency */,
+			);
+			name = "05-了解-CoreLocation框架的基本使用—指南针Tests";
+			productName = "05-了解-CoreLocation框架的基本使用—指南针Tests";
+			productReference = 7B9990161B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B9990201B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9990301B72034B0025E635 /* Build configuration list for PBXNativeTarget "05-了解-CoreLocation框架的基本使用—指南针UITests" */;
+			buildPhases = (
+				7B99901D1B72034B0025E635 /* Sources */,
+				7B99901E1B72034B0025E635 /* Frameworks */,
+				7B99901F1B72034B0025E635 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B9990231B72034B0025E635 /* PBXTargetDependency */,
+			);
+			name = "05-了解-CoreLocation框架的基本使用—指南针UITests";
+			productName = "05-了解-CoreLocation框架的基本使用—指南针UITests";
+			productReference = 7B9990211B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B998FF51B72034A0025E635 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "小码哥";
+				TargetAttributes = {
+					7B998FFC1B72034A0025E635 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = QJ63U2KMW4;
+					};
+					7B9990151B72034B0025E635 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7B998FFC1B72034A0025E635;
+					};
+					7B9990201B72034B0025E635 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 7B998FFC1B72034A0025E635;
+					};
+				};
+			};
+			buildConfigurationList = 7B998FF81B72034A0025E635 /* Build configuration list for PBXProject "05-了解-CoreLocation框架的基本使用—指南针" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B998FF41B72034A0025E635;
+			productRefGroup = 7B998FFE1B72034A0025E635 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B998FFC1B72034A0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针 */,
+				7B9990151B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针Tests */,
+				7B9990201B72034B0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B998FFB1B72034A0025E635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9990101B72034B0025E635 /* LaunchScreen.storyboard in Resources */,
+				7B99900D1B72034B0025E635 /* Assets.xcassets in Resources */,
+				7B99900B1B72034B0025E635 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9990141B72034B0025E635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B99901F1B72034B0025E635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B998FF91B72034A0025E635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9990081B72034B0025E635 /* ViewController.m in Sources */,
+				7B9990051B72034B0025E635 /* AppDelegate.m in Sources */,
+				7B9990021B72034B0025E635 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9990121B72034B0025E635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B99901B1B72034B0025E635 /* _5____CoreLocation___________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B99901D1B72034B0025E635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9990261B72034B0025E635 /* _5____CoreLocation___________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B9990181B72034B0025E635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B998FFC1B72034A0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针 */;
+			targetProxy = 7B9990171B72034B0025E635 /* PBXContainerItemProxy */;
+		};
+		7B9990231B72034B0025E635 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B998FFC1B72034A0025E635 /* 05-了解-CoreLocation框架的基本使用—指南针 */;
+			targetProxy = 7B9990221B72034B0025E635 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B9990091B72034B0025E635 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B99900A1B72034B0025E635 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B99900E1B72034B0025E635 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B99900F1B72034B0025E635 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B9990281B72034B0025E635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7B9990291B72034B0025E635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B99902B1B72034B0025E635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "05-了解-CoreLocation框架的基本使用—指南针/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.520it.-5----CoreLocation-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		7B99902C1B72034B0025E635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "05-了解-CoreLocation框架的基本使用—指南针/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.520it.-5----CoreLocation-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		7B99902E1B72034B0025E635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "05-了解-CoreLocation框架的基本使用—指南针Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.520it.-5----CoreLocation-----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/05-了解-CoreLocation框架的基本使用—指南针.app/05-了解-CoreLocation框架的基本使用—指南针";
+			};
+			name = Debug;
+		};
+		7B99902F1B72034B0025E635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "05-了解-CoreLocation框架的基本使用—指南针Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.520it.-5----CoreLocation-----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/05-了解-CoreLocation框架的基本使用—指南针.app/05-了解-CoreLocation框架的基本使用—指南针";
+			};
+			name = Release;
+		};
+		7B9990311B72034B0025E635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "05-了解-CoreLocation框架的基本使用—指南针UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.520it.-5----CoreLocation-----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "05-了解-CoreLocation框架的基本使用—指南针";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7B9990321B72034B0025E635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "05-了解-CoreLocation框架的基本使用—指南针UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.520it.-5----CoreLocation-----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "05-了解-CoreLocation框架的基本使用—指南针";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B998FF81B72034A0025E635 /* Build configuration list for PBXProject "05-了解-CoreLocation框架的基本使用—指南针" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9990281B72034B0025E635 /* Debug */,
+				7B9990291B72034B0025E635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B99902A1B72034B0025E635 /* Build configuration list for PBXNativeTarget "05-了解-CoreLocation框架的基本使用—指南针" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B99902B1B72034B0025E635 /* Debug */,
+				7B99902C1B72034B0025E635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B99902D1B72034B0025E635 /* Build configuration list for PBXNativeTarget "05-了解-CoreLocation框架的基本使用—指南针Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B99902E1B72034B0025E635 /* Debug */,
+				7B99902F1B72034B0025E635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B9990301B72034B0025E635 /* Build configuration list for PBXNativeTarget "05-了解-CoreLocation框架的基本使用—指南针UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9990311B72034B0025E635 /* Debug */,
+				7B9990321B72034B0025E635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B998FF51B72034A0025E635 /* Project object */;
+}
